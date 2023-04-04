@@ -1,0 +1,110 @@
+@import "variables";
+@import "animations";
+.header {
+	// hamburger open
+	&.open {
+		.header__toggle {
+			> span:first-child {
+				transform: rotate(45deg);
+			}
+
+			> span:nth-child(2) {
+				opacity: 0;
+			}
+
+			> span:last-child {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	nav {
+		padding: 1.4rem 1.5rem;
+		height: 80px;
+		align-items: center;
+		position: relative;
+
+		@include breakpoint-up(large) {
+			padding: 3rem 1.5rem;
+		}
+	}
+	&__logo {
+		text-decoration: none;
+		color: black;
+		font-weight: 600;
+		font-size: 25px;
+		img {
+			padding-right: 0;
+		}
+	}
+
+	//  #mobile
+	&__toggle {
+		> span {
+			display: block;
+			width: 26px;
+			height: 2px;
+			background: $darkBlue;
+			&:not(:last-child) {
+				margin-bottom: 3px;
+			}
+			transition: all 300ms ease-in-out;
+			transform-origin: 5.5px 1px;
+		}
+	}
+
+	&__links {
+		text-transform: uppercase;
+
+		a {
+			position: relative;
+			font-size: $font-sm;
+			color: black;
+			transition: color 200ms ease-in-out;
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				height: 15px;
+				left: 4;
+				right: -6;
+				bottom: -6px;
+				background: $yellow;
+				opacity: 0;
+			}
+			&:hover {
+				&::before {
+					opacity: 0.8;
+					z-index: -1000;
+				}
+			}
+		}
+	}
+
+	&__menu {
+		position: absolute;
+		width: 100%;
+		a {
+			background-color: $yellow;
+			padding: 1.5rem;
+			display: block;
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 1px solid gray;
+		}
+	}
+}
+
+.overlay {
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
+	background: $beige;
+}

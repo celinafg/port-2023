@@ -1,0 +1,106 @@
+@import "variables";
+
+.projects {
+	&:not(:projects__title) {
+		padding: 0.9rem;
+	}
+
+	&__hero {
+		width: 80vw;
+
+		@include breakpoint-up(large) {
+			max-width: 40vw;
+			margin: 0 2rem;
+		}
+	}
+
+	&__title {
+		border-bottom: 1px solid gray;
+		padding: 1.8rem 0 1.8rem 1.2rem;
+
+		@include breakpoint-up(large) {
+			padding: 2.4rem 0 2.4rem 5rem;
+		}
+	}
+
+	&__single {
+		padding: 2rem 1.2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include breakpoint-up(large) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: unset;
+			padding: 4rem 1.2rem;
+		}
+	}
+
+	p {
+		font-size: $font-sm;
+		width: 14rem;
+		line-height: 1.3rem;
+		margin-top: 0.8rem;
+		margin-bottom: 0.5rem;
+		@include breakpoint-up(large) {
+			width: 23rem;
+			margin: 1rem;
+			line-height: 1.6rem;
+		}
+	}
+
+	h3 {
+		text-transform: uppercase;
+		display: inline-flex;
+		justify-content: center;
+		margin-top: 1rem;
+
+		@include breakpoint-up(large) {
+			margin: 0 1rem;
+		}
+	}
+
+	ul {
+		list-style-image: url(/images/bullet.svg);
+		font-size: $font-sm;
+		text-transform: uppercase;
+		margin-bottom: 0.4rem;
+		padding: 0;
+
+		@include breakpoint-up(large) {
+			padding-left: 30px;
+		}
+	}
+
+	li {
+		margin: 0.8rem 0;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+
+		@include breakpoint-up(large) {
+			justify-content: unset;
+			padding: 0.5rem 0 0 0.8rem;
+		}
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include breakpoint-up(large) {
+			width: 40vw;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: unset;
+			h3 {
+				font-size: 1.8rem;
+				justify-content: unset;
+			}
+		}
+	}
+}
