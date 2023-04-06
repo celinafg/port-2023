@@ -33,6 +33,7 @@
 
 			.left {
 				flex: 3;
+				text-align: right;
 			}
 
 			.right {
@@ -52,6 +53,7 @@
 		margin-bottom: 0.6rem;
 		line-height: 1.5rem;
 		justify-content: space-evenly;
+		text-align: left;
 
 		h5:first-of-type {
 			width: 6rem;
@@ -162,6 +164,7 @@
 				display: flex;
 				flex: 3;
 				padding-top: 9px;
+				font-size: 80px;
 			}
 		}
 
@@ -175,6 +178,10 @@
 			font-weight: 100;
 			text-transform: uppercase;
 			font-size: 0.78rem;
+
+			@include breakpoint-up(large) {
+				font-size: 14px;
+			}
 			padding-bottom: 0.2rem;
 		}
 
