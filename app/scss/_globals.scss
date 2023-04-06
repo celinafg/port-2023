@@ -76,6 +76,10 @@ a:visited {
 		justify-content: flex-end;
 	}
 
+	&-dir-column {
+		flex-direction: column;
+	}
+
 	&-ai-c {
 		align-items: center;
 	}
