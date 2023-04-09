@@ -163,6 +163,11 @@ a:visited {
   padding-bottom: 5rem !important;
 }
 
+.favicon {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
 .has-fade {
   visibility: hidden;
 }
@@ -730,6 +735,40 @@ a:visited {
 }
 .case__statement p {
   padding-bottom: 14px;
+}
+.case__statement iframe {
+  padding: 1rem 0;
+}
+.case__statement .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 64em) {
+  .case__statement .rating {
+    flex-direction: row;
+    align-items: unset;
+  }
+}
+.case__statement .rating div {
+  flex: 1.5;
+  border: 3px solid #ffe7be;
+  border-radius: 20px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 20vh;
+  width: 100%;
+}
+.case__statement .rating div p {
+  text-align: center;
+  padding-bottom: 0;
+}
+.case__statement .rating p {
+  flex: 3;
+  display: flex;
+  justify-content: center;
 }
 .case__solution h4 {
   padding: 1rem 0;
