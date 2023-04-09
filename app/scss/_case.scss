@@ -142,6 +142,109 @@
 		}
 	}
 
+	&__about {
+		@include breakpoint-up(large) {
+			display: flex;
+			max-width: 60vw;
+			margin: 0 auto;
+			h3 {
+				flex: 2;
+			}
+
+			div {
+				flex: 8;
+				padding: 0 5rem;
+			}
+		}
+
+		ol,
+		ul,
+		li {
+			p {
+				padding: 8px 0;
+			}
+		}
+
+		ul {
+			padding-left: 0;
+			padding-bottom: 20px;
+		}
+
+		li {
+			border: 4px solid $yellow;
+			margin: 8px 2px;
+			padding: 1.7rem;
+			border-radius: 20px;
+			list-style-type: none;
+			font-size: 0.8rem;
+
+			.bold {
+				font-size: 0.8rem;
+			}
+		}
+
+		h5 {
+			font-weight: 100;
+			text-transform: uppercase;
+			font-size: 0.78rem;
+
+			@include breakpoint-up(large) {
+				font-size: 14px;
+			}
+			padding-bottom: 0.2rem;
+		}
+
+		h3 {
+			padding-bottom: 0.8rem;
+		}
+
+		h4 {
+			font-size: 1.2rem;
+			font-weight: 800;
+			padding-bottom: 20px;
+		}
+
+		p {
+			padding-bottom: 14px;
+		}
+
+		iframe {
+			padding: 1rem 0;
+		}
+
+		.rating {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@include breakpoint-up(large) {
+				flex-direction: row;
+				align-items: unset;
+			}
+			div {
+				flex: 1.5;
+				border: 3px solid $yellow;
+				border-radius: 20px;
+				margin-right: 2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				max-height: 20vh;
+				width: 100%;
+
+				p {
+					text-align: center;
+					padding-bottom: 0;
+				}
+			}
+
+			p {
+				flex: 3;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
 	&__statement {
 		min-width: 16rem;
 		margin: 0 auto;
@@ -149,7 +252,7 @@
 
 		@include breakpoint-up(large) {
 			.statement {
-				max-width: 75vw;
+				max-width: 70vw;
 
 				margin: 0 auto;
 				display: flex;
@@ -178,7 +281,8 @@
 				flex: 3;
 			}
 
-			h5 {
+			h5,
+			h3 {
 				display: flex;
 				flex: 3;
 				padding-top: 9px;

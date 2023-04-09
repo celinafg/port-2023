@@ -36,4 +36,16 @@
 			font-size: $font-med;
 		}
 	}
+
+	&__about {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.abt {
+	&__img {
+		width: auto;
+		object-fit: contain;
+	}
 }
