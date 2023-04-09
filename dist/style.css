@@ -788,8 +788,7 @@ a:visited {
   .case__statement li {
     flex: 3;
   }
-  .case__statement h5,
-  .case__statement h3 {
+  .case__statement h5 {
     display: flex;
     flex: 3;
     padding-top: 9px;
