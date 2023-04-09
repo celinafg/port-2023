@@ -236,6 +236,42 @@
 		p {
 			padding-bottom: 14px;
 		}
+
+		iframe {
+			padding: 1rem 0;
+		}
+
+		.rating {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@include breakpoint-up(large) {
+				flex-direction: row;
+				align-items: unset;
+			}
+			div {
+				flex: 1.5;
+				border: 3px solid $yellow;
+				border-radius: 20px;
+				margin-right: 2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				max-height: 20vh;
+				width: 100%;
+
+				p {
+					text-align: center;
+					padding-bottom: 0;
+				}
+			}
+
+			p {
+				flex: 3;
+				display: flex;
+				justify-content: center;
+			}
+		}
 	}
 
 	&__solution {
