@@ -413,7 +413,7 @@ a:visited {
   }
 }
 .projects ul {
-  list-style-image: url(/images/bullet.svg);
+  list-style-image: url(../../images/bullet.svg);
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 0.4rem;
