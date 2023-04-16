@@ -618,8 +618,8 @@ a:visited {
 }
 @media (min-width: 64em) {
   .case__image-row img {
-    width: 16.6666666667vw;
-    height: 16.6666666667vw;
+    width: 16.3333333333vw;
+    height: 16.3333333333vw;
   }
 }
 .case__image-col {
